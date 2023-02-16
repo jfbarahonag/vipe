@@ -1,7 +1,12 @@
+import Header from "../components/Header";
 
 export const Home = () => {
   return (
-    <div>Home</div>
+    <>
+      <Header />
+      <div>Home</div>
+    
+    </>
   )
 }
 
