@@ -1,45 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-import Layout from "./pages/Layout";
-
-import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
-import Contact from "./pages/Contact";
-
 import NotFound from "./pages/404";
-import About from "./pages/About";
 
-const routes = [
-  {
-    parent: {
-      id: 1,
-      path: "/",
-      element: <Layout />
-    },
-    children: [
-      {
-        id: 10,
-        path: "",
-        element: <Home />
-      },
-      {
-        id: 11,
-        path: "blogs",
-        element: <Blogs />
-      },
-      {
-        id: 12,
-        path: "contact",
-        element: <Contact />
-      },
-      {
-        id: 13,
-        path: "about",
-        element: <About />
-      },
-    ]
-  }
-]
+import { elementsRoutes as routes } from "../json/routes";
 
 const App = () => {
   return (

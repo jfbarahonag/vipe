@@ -1,27 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const links = [
-  {
-    id:1,
-    name: 'Home',
-    path:'/'
-  },
-  {
-    id:2,
-    name: 'Blogs',
-    path:'/blogs'
-  },
-  {
-    id:3,
-    name: 'Contact',
-    path:'/contact'
-  },
-  {
-    id:4,
-    name: 'About',
-    path:'/about'
-  },
-];
+import { links } from "../../json/routes"
 
 const NavBar = () => {
   return (
