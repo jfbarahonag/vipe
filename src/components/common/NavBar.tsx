@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { links } from "../../json/routes"
+import { links } from "../../../json/routes"
 
 const NavBar = () => {
   return (
