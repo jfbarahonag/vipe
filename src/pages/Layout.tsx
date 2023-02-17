@@ -1,12 +1,13 @@
 import { Outlet } from "react-router-dom";
-import NavBar from "../components/common/NavBar";
+import Wrapper from "../components/common/Wrapper";
+import Header from "../components/Header";
 
 export const Layout = () => {
   return (
-    <>
-      <NavBar />
+    <Wrapper>
+      <Header />
       <Outlet />
-    </>
+    </Wrapper>
   )
 }   
 
