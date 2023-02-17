@@ -77,7 +77,7 @@ const navBarLinks = {
 const Header = () => {
   return (
       <header className='' style={{position:'sticky',top:0}} >
-        {/* // topbar */}
+        {/* topbar */}
         <div className='container-fluid bg-primary py-3 d-none d-md-block'>
           <div className="container">
             <div className="row">
@@ -129,6 +129,9 @@ const Header = () => {
           <div className="container-lg position-relative p-0 px-lg-0" style={{ zIndex: 1 }}>
             <nav className="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
               {/* central text */}
+              <Link to={'/'} className="navbar-brand d-block d-lg-none">
+                <h1 className="m-0 display-4 text-primary"><span className="text-secondary">Vipe</span>GB</h1>
+              </Link>
               {/* hamburguer button */}
               <button
                 type='button'
