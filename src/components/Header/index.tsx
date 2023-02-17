@@ -26,20 +26,52 @@ const topBarLinks = {
     {
       title: "facebook",
       path: "/",
-      fa:'fab fa-facebook-f'
+      fa: 'fab fa-facebook-f'
     },
     {
       title: "twiter",
       path: "/",
-      fa:'fab fa-twitter'
+      fa: 'fab fa-twitter'
     },
     {
       title: "instagram",
       path: "https://www.instagram.com",
-      fa:'fab fa-instagram'
+      fa: 'fab fa-instagram'
     },
 
   ],
+}
+
+const navBarLinks = {
+  left: [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Products",
+      link: "/products",
+    },
+  ],
+  right: [
+    {
+      name: "Service",
+      link: "/service",
+    },
+    {
+      name: "Gallery",
+      link: "/gallery",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+
+  ]
 }
 
 const Header = () => {
@@ -94,6 +126,62 @@ const Header = () => {
           </div>
         </div>
         {/* // navbar */}
+        <div className="container-fluid position-relative nav-bar p-0">
+          <div className="container-lg position-relative p-0 px-lg-0" style={{ zIndex: 1 }}>
+            <nav className="navbar navbar-expand-lg bg-white navbar-light shadow p-lg-0">
+              {/* central text */}
+              {/* hamburguer button */}
+              <button
+                type='button'
+                className='navbar-toggler'
+                data-toggle='collapse'
+                data-target='#navbarCollapse'
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+              {/* nav bar */}
+              <div className="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                {/* left options */}
+                <ul className="navbar-nav ml-auto py-0">
+                  {
+                    navBarLinks.left.map((item, idx) =>
+                      <li key={item.name}>
+                        <Link
+                          to={item.link}
+                          className={`nav-item nav-link ${idx === 0 ? 'active' : ''}`}
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    )
+                  }
+                </ul>
+                {/* center option */}
+                <Link to={'/'} className="navbar-brand mx-5 d-none d-lg-block">
+                  <h1 className="m-0 display-4 text-primary"><span className="text-secondary">Vipe</span>GB</h1>
+                </Link>
+                {/* right options */}
+                <ul className="navbar-nav mr-auto py-0">
+                  {
+                    navBarLinks.right.map(item =>
+                      <li key={item.name}>
+                        <Link
+                          to={item.link}
+                          className='nav-item nav-link'
+                        >
+                          {item.name}
+                        </Link>
+                      </li>
+                    )
+                  }
+                  {/* <a href="service.html" className="nav-item nav-link">Service</a>
+                        <a href="gallery.html" className="nav-item nav-link">Gallery</a>
+                        <a href="contact.html" className="nav-item nav-link">Contact</a> */}
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
         {/* // hero slider */}
       </header>
     </Wrapper>
