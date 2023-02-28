@@ -60,3 +60,27 @@ export const links = [
     path:'/about'
   },
 ];
+
+//Social Network
+export const social = [
+  {
+    id:1,
+    link: '#',
+    className: 'fab fa-twitter'
+  },
+  {
+    id:2,
+    link: '#',
+    className: 'fab fa-facebook-f'
+  },
+  {
+    id:3,
+    link: '#',
+    className: 'fab fa-linkedin-in'
+  },
+  {
+    id:4,
+    link: '#',
+    className: 'fab fa-instagram'
+  },
+];
