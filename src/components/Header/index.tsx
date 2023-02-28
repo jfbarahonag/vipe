@@ -76,7 +76,7 @@ const navBarLinks = {
 
 const Header = () => {
   return (
-      <header className='' style={{position:'sticky',top:0}} >
+      <header className='' style={{position:'sticky', zIndex:10, top:0}} >
         {/* topbar */}
         <div className='container-fluid bg-primary py-3 d-none d-md-block'>
           <div className="container">
