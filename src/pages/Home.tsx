@@ -1,7 +1,9 @@
+import Carousel from "../components/common/Carousel";
 
 export const Home = () => {
   return (
     <>
+      <Carousel />
       <div>Home</div>
       <p>lorem*10</p>
       <ul>
