@@ -1,4 +1,5 @@
 import React from 'react'
+import BackToTop from './BackToTop'
 
 /**
  * Wrapper.tsx
@@ -15,6 +16,7 @@ export const Wrapper = ({ children, styles }: WrapperProps) => {
   return (
     <section style={styles}>
       {children}
+      <BackToTop />
     </section>
   )
 }

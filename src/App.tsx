@@ -4,6 +4,10 @@ import NotFound from "./pages/404";
 
 import { elementsRoutes as routes } from "../json/routes";
 
+import { init } from "./ts/main";
+
+init();
+
 const App = () => {
   return (
     <BrowserRouter>

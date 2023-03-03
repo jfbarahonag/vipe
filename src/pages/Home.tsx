@@ -1,4 +1,3 @@
-import BackToTop from "../components/common/BackToTop";
 import Carousel from "../components/common/Carousel";
 
 export const Home = () => {
@@ -44,7 +43,6 @@ export const Home = () => {
         <li>1</li>
         <li>1</li>
       </ul>
-      <BackToTop />
     </>
   )
 }
