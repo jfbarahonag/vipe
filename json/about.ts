@@ -1,3 +1,5 @@
+import about from "../public/img/about.jpg"
+
 const aboutData = {
   about: {
     title: 'About Us',
@@ -31,7 +33,7 @@ const aboutData = {
     }
   },
   img: {
-    path: '/img/about.jpg',
+    path: about,
     text: 'about image'
   }
 }

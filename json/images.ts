@@ -1,7 +1,10 @@
+import carousel1 from '../public/img/carousel/carousel-1.jpg'
+import carousel2 from '../public/img/carousel/carousel-2.jpg'
+
 const images = [
   {
     id:1,
-    path: 'img/carousel/carousel-1.jpg',
+    path: carousel1,
     alt: 'Image Carousel 1',
     caption: {
       title: 'Traditional & Delicious',
@@ -14,7 +17,7 @@ const images = [
   },
   {
     id:2,
-    path: 'img/carousel/carousel-2.jpg',
+    path: carousel2,
     alt: 'Image Carousel 2',
     caption: {
       title: 'Traditional & Delicious',

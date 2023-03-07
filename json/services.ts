@@ -1,3 +1,8 @@
+import service1 from "../public/img/services/service-1.jpg"
+import service2 from "../public/img/services/service-2.jpg"
+import service3 from "../public/img/services/service-3.jpg"
+import service4 from "../public/img/services/service-4.jpg"
+
 const servicesData = {
   title: 'Best Services We Provide For Our Clients',
   cards: [
@@ -6,7 +11,7 @@ const servicesData = {
       title: 'Quality Mantain',
       description: 'Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo',
       img: {
-        path: '/img/service-1.jpg',
+        path: service1,
         text: 'Service 1',
       },
       more: {
@@ -19,7 +24,7 @@ const servicesData = {
       title: 'Individual Approach',
       description: 'Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo',
       img: {
-        path: '/img/service-2.jpg',
+        path: service2,
         text: 'Service 2',
       },
       more: {
@@ -32,7 +37,7 @@ const servicesData = {
       title: 'Celebration Ice Cream',
       description: 'Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo',
       img: {
-        path: '/img/service-3.jpg',
+        path: service3,
         text: 'Service 3',
       },
       more: {
@@ -45,7 +50,7 @@ const servicesData = {
       title: 'Delivery To Any Point',
       description: 'Dolor nonumy sed eos sed lorem diam amet eos magna. Dolor kasd lorem duo stet kasd justo',
       img: {
-        path: '/img/service-4.jpg',
+        path: service4,
         text: 'Service 4',
       },
       more: {
