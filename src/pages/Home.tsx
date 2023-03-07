@@ -1,9 +1,11 @@
 import Carousel from "../components/common/Carousel";
+import About from "../components/common/About";
 
 export const Home = () => {
   return (
     <>
       <Carousel />
+      <About />
       <div>Home</div>
       <p>lorem*10</p>
       <ul>
