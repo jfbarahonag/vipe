@@ -86,6 +86,13 @@ const equals = (obj1: Object, obj2: Object) => (
 
 const Header = () => {
   const [active, setActive] = useState(navBarLinks.left[0]);
+
+  const isMobile = () => {
+    const hamburguerMenu = document.querySelector('.navbar-toggler')
+    if (!hamburguerMenu) return false
+    return window.getComputedStyle(hamburguerMenu).getPropertyValue('display') !== 'none'
+  }
+
   return (
     <header className='' style={{ position: 'sticky', zIndex: 10, top: 0 }} >
       {/* topbar */}
@@ -161,7 +168,7 @@ const Header = () => {
               <ul className="navbar-nav ml-auto py-0">
                 {
                   navBarLinks.left.map((item, idx) =>
-                    <li key={item.id}>
+                    <li key={item.id} data-toggle='collapse' data-target={`${isMobile() ? '#navbarCollapse':''}`}>
                       <Link
                         to={item.link}
                         className={`nav-item nav-link ${equals(item, active) ? 'active' : ''}`}
@@ -181,7 +188,7 @@ const Header = () => {
               <ul className="navbar-nav mr-auto py-0">
                 {
                   navBarLinks.right.map(item =>
-                    <li key={item.id}>
+                    <li key={item.id} data-toggle='collapse' data-target={`${isMobile() ? '#navbarCollapse':''}`}>
                       <Link
                         to={item.link}
                         className={`nav-item nav-link ${equals(item, active) ? 'active' : ''}`}
