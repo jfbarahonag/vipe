@@ -1,4 +1,4 @@
-import about from "../public/img/about.jpg"
+import about from "../src/assets/img/about.jpg"
 
 const aboutData = {
   about: {

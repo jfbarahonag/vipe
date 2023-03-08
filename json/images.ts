@@ -1,5 +1,5 @@
-import carousel1 from '../public/img/carousel/carousel-1.jpg'
-import carousel2 from '../public/img/carousel/carousel-2.jpg'
+import carousel1 from '../src/assets/img/carousel/carousel-1.jpg'
+import carousel2 from '../src/assets/img/carousel/carousel-2.jpg'
 
 const images = [
   {

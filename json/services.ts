@@ -1,7 +1,7 @@
-import service1 from "../public/img/services/service-1.jpg"
-import service2 from "../public/img/services/service-2.jpg"
-import service3 from "../public/img/services/service-3.jpg"
-import service4 from "../public/img/services/service-4.jpg"
+import service1 from "../src/assets/img/services/service-1.jpg"
+import service2 from "../src/assets/img/services/service-2.jpg"
+import service3 from "../src/assets/img/services/service-3.jpg"
+import service4 from "../src/assets/img/services/service-4.jpg"
 
 const servicesData = {
   title: 'Best Services We Provide For Our Clients',
