@@ -6,7 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "serve": "vite preview --port 3001",
+    "dbuild": "docker build -t vipe .",
+    "drmi": "docker rmi vipe",
+    "drun": "docker run --name vipecnt --rm -d -p 3001:3001 vipe",
+    "dstop": "docker stop vipecnt",
+    "dinspect": "docker run -it vipecnt bash",
+    "dlogs": "docker container logs -f vipecnt"
   },
   "dependencies": {
     "react": "18.2.0",
