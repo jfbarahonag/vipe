@@ -10,8 +10,8 @@ const options = {
   loop: true,
   nav : true,
   navText : [
-      '<i class="fa fa-angle-left" aria-hidden="true"></i>',
-      '<i class="fa fa-angle-right" aria-hidden="true"></i>'
+      '<i class="fa fa-angle-left owl-prev" aria-hidden="true"></i>',
+      '<i class="fa fa-angle-right owl-next" aria-hidden="true"></i>'
   ],
   responsive: {
       0:{
