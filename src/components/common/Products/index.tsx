@@ -36,9 +36,11 @@ const Products = () => {
     <div className="container-fluid py-5">
       <div className="container py-5">
         <div className="row">
-          <h1 className="section-title position-relative mb-5">
-            Best Prices We Offer For Ice Cream Lovers
-          </h1>
+          <div className="col-lg-6">
+            <h1 className="section-title position-relative mb-5">
+              Best Prices We Offer For Ice Cream Lovers
+            </h1>
+          </div>
           <div className="col-lg-6 mb-5 mb-lg-0 pb-5 pb-lg-0" />
         </div>
         <div className="row">
