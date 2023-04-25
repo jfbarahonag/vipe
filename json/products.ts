@@ -9,31 +9,36 @@ const productsData = [
     id: 1,
     title: 'Vanilla Ice Cream',
     price: '99',
-    imgUrl: product1
+    imgUrl: product1,
+    link: '/'
   },
   {
     id: 2,
     title: 'Vanilla Ice Cream',
     price: '99',
-    imgUrl: product2
+    imgUrl: product2,
+    link: '/'
   },
   {
     id: 3,
     title: 'Vanilla Ice Cream',
     price: '99',
-    imgUrl: product3
+    imgUrl: product3,
+    link: '/'
   },
   {
     id: 4,
     title: 'Vanilla Ice Cream',
     price: '99',
-    imgUrl: product4
+    imgUrl: product4,
+    link: '/'
   },
   {
     id: 5,
     title: 'Vanilla Ice Cream',
     price: '99',
-    imgUrl: product5
+    imgUrl: product5,
+    link: '/'
   },
 ]
 
