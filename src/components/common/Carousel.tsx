@@ -1,3 +1,4 @@
+import '../../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
 import images from "../../../json/images";
 
 const Carousel = () => {
